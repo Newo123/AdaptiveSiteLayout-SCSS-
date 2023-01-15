@@ -1,0 +1,44 @@
+.price{
+  background: $primaryColor;
+  border-radius: 1rem;
+  width: 30rem;
+  padding: 1.6rem 0.2rem 2rem;
+
+  &__title{
+    @include h3($white);
+    text-align: center;
+    margin-bottom: 1.7rem;
+    line-height: 1;
+  }
+
+  &__sum{
+    width: 100%;
+    height: 7.1rem;
+    background: $white;
+    color: $primaryColor;
+    font-size: 4rem;
+    text-align: center;
+    padding: 1.8rem 0;
+    line-height: 1;
+
+
+    &::before{
+      content: '$';
+    }
+
+
+  }
+  &__features{
+    @include p2($white);
+    line-height: 1.71;
+    padding: 1.5rem 3.6rem 0 3.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__btn{
+    @extend %btn;
+    margin: 0 1.8rem;
+    display: block;
+
+  }
+}
